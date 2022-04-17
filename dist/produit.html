@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwindcss.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <title>ZoBest</title>
+</head>
+<body style="background-color: #EEF9FE;">
+            <nav class="mb-20">
+                <div class="menu top-0 z-20 fixed w-full h-16 flex px-6 lg:px-20 justify-between items-center bg-white shadow-xl">
+                    <div class="logo">
+                        <a href="index.html"><img src="../src/images/logo.png" alt="" class="w-24"></a>
+                    </div>
+                    <ul class="flex">
+                        <li class="mr-8"><a class="text-sm font-semibold" href="index.html">Home</a></li>
+                        <li class="mr-8"><a class="text-sm font-semibold active" href="">Produit</a></li>
+                        <li class="mr-8"><a class="text-sm font-semibold" href="">A propose</a></li>
+                        <li class="mr-8"><a class="text-sm font-semibold" href="">Contact</a></li>
+                        <li class="mr-8"><a class="btn-sign text-sm font-semibold" href="">Sign in</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+           <section class="search-bar text-center justify-center mx-auto mt-28">
+            <form action="" class="mx-auto">
+                <input type="text" name="search" placeholder="Qu'est-ce que vous voulez acheter ?" class="lg:w-1/2 px-3 py-2 outline-none shadow-sm placeholder:text-xs text-[#E8F9FF] rounded-full">
+                <input type="submit" name="submit" value="Rechercher" class="px-5 py-3 rounded-full outline-none font-semibold">
+            </form>
+           </section>
+
+           <section class="content flex justify-center items-center">
+               <div class="col w-1/5 m-12 bg-white">
+                   <h1 class="p-3">Catégories</h1>
+                   <h1 class="p-3">Marque</h1>
+                   <h1 class="p-3">Prix</h1>
+               </div>
+               <div class="col bg-white w-4/5 mx-6 my-10">
+                   <div class="top flex justify-between items-center mx-10 my-6">
+                       <h1>Iphone 13 Pro Max  <span>(1200 résultats)</span></h1>
+                       <form action="">
+                           <label for="trier">Trier par :</label>
+                           <select name="trier" id="">
+                               <option value="prix">Prix</option>
+                               <option value="commande">Commande</option>
+                           </select>
+                       </form>
+                   </div>
+                   <div class="row lg:px-20 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-8">
+                    <a href="" class="col mx-auto">
+                        <div class="box w-56 bg-white rounded-xl shadow-xl">
+                            <img src="../src/images/header.png" alt="" class="h-36 rounded-tl-xl rounded-tr-xl">
+                            <p class="px-3 pt-2 text-sm">Chez AliExpress</p>
+                            <h2 class="px-3 py-2 font-bold">Les meilleur produit Les 
+                                meilleur produit  </h2>
+                                <div class="stars px-3 flex items-center">
+                                    <img src="../src/images/etoile.png" alt="" class="w-4 mr-1">
+                                    <img src="../src/images/etoile.png" alt="" class="w-4 mr-1">
+                                    <img src="../src/images/etoile.png" alt="" class="w-4 mr-1">
+                                    <img src="../src/images/etoile.png" alt="" class="w-4 mr-1">
+                                </div>
+                                <div class="flex justify-between items-center p-3 pb-4">
+                                    <p class="font-semibold">200 DH</p>
+                                    <p>800 vendu(s)</p>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+               </div>
+           </section>
+    <footer class="mt-6">
+      <div class="top px-6 lg:px-24 py-8 flex  justify-between lg:items-center">
+        <div class="logo">
+            <img src="../src/images/logo.png" alt="" class="w-28 pb-2">
+            <p class="text-sm pl-1">Le best offer pour vous. </p>
+        </div>
+        <div class="social flex items-center">
+            <a href=""><img src="../src/images/Tracé 231.png" alt="" class="w-7 mr-8"></a>
+            <a href=""><img src="../src/images/Icon simple-instagram.png" alt="" class="w-7"></a>
+        </div>
+      </div>
+      <div class="copyright text-xs lg:text-sm px-1 lg:px-24 py-2 lg:py-4 flex justify-between items-center">
+          <p>Copyright  &copy;  2022 Tout droits reservée.</p>
+          <div class="terms flex flex-col lg:flex-row">
+              <a href="" class="mr-4 mb-1 lg:mb-0">Terms & conditions</a>
+              <a href="">Policy Privacy</a>
+          </div>
+      </div>
+    </footer>
+</body>
+</html>
