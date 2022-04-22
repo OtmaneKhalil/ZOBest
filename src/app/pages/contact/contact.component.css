@@ -1,0 +1,23 @@
+.login .login-left {
+            background: linear-gradient(90deg,#0078FB,#5f51ff);
+            border-radius: 0 0 70px 0;
+        }
+        .login .login-left h1::before {
+            position: absolute;
+            display: inline;
+            width: 150px;
+            height: 5px;
+            background-color: white;
+        }
+        .login input,textarea {
+            background-color: #fdfdff;
+        }
+        .login input[type='submit'] {
+            background-color: #0078FB;
+            color: white;
+            cursor: pointer;
+        }
+        .login input[type='submit']:hover {
+            background-color: #0064cf;
+            transition: all .6s ease;
+        }

@@ -1,0 +1,9 @@
+.login input[type='submit'] {
+            background-color: #0078FB;
+            color: white;
+            cursor: pointer;
+        }
+        .login input[type='submit']:hover {
+            background-color: #0064cf;
+            transition: all .6s ease;
+        }

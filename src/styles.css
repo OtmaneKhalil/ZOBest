@@ -1,1 +1,225 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-color: #0078FB;
+    --text-color-1: #001582;
+    --text-color-2: #0078FB;
+    --text-gray: #585858;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/images/header2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu ul li .active{
+    color: var(--primary-color);
+    transition: all 0.4s ease;
+}
+.menu ul li a:hover:not(.btn-sign){
+    color: var(--primary-color);
+    transition: all 0.4s ease;
+}
+.btn-sign {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px 13px;
+    border-radius: 4px;
+}
+.btn-sign:hover {
+    background-color: #0066d4;
+    transition: all 0.4s ease;
+}
+header .content h1 {
+    color: var(--text-color-1);
+    line-height: 50px;
+}
+.content h1 span {
+    color: var(--primary-color);
+}
+.content p {
+    color: #46549C;
+}
+.search input[type='text']{
+    background-color: #E8F9FF;
+}
+.search input[type='submit']{
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateX(-40px);
+    cursor: pointer;
+}
+.search input[type='submit']:hover{
+    background-color: #0066d4;
+    transition: all 0.5s ease;
+}
+
+.best-product h1 {
+    color: #585858;
+}
+.avantage {
+    background-color: #f2f2f28e;
+}
+
+.icon img{
+    width: 42px;
+    padding: 7px;
+    background-color: #0079fb22;
+    border-radius: 4px;
+}
+.avantage .text-sm {
+    font-size: 0.800rem;
+    color: #7D7D7D;
+}
+.avantage h1 {
+    color: #585858;
+}
+
+.nos-magasins h1 {
+    color: #585858;
+}
+
+.marche h1 {
+    color: #585858;
+}
+.marche h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #0079fb22;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #585858;
+}
+.fedback h1 {
+    color: #585858;
+}
+.fedback .box {
+    box-shadow: 5px 6px 56px #98989833;
+    color: #858585;
+}
+
+footer {
+    /* background-color: #f5f5f593; */
+    background-color: #f7f7f8;
+    color: #949494;
+}
+footer .copyright {
+    color: #949494;
+    background-color: #f3f3f3;
+}
+
+@media screen and (max-width: 750px){
+    .menu ul{
+        width: 100%;
+        height: 100%;
+        margin-top: 4rem;
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        right: -100%;
+        z-index: 1000;
+        background-color: var(--primary-color);
+        text-align: center;
+        padding-top: 30px;
+        transition: all .5s;
+    }
+    .menu ul li {
+        margin: 14px;
+        padding: 10px;
+    }
+    .menu ul li a:not(.btn-sign) {
+        font-size: 1.3rem;
+        color: white;
+    }
+    .btn-sign {
+        background-color: white;
+        color: var(--primary-color);
+        padding: 7px 16px;
+        border-radius: 4px;
+        font-size: 1.3rem;
+    }
+    .show ul{
+        right: 0;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .search input[type='text']::placeholder{
+        font-size: 12px;
+     }
+    .search input[type='submit']{
+        background-color: var(--primary-color);
+        color: white;
+        transform: translateX(-37px);
+        cursor: pointer;
+    }
+}
+
+/* style page produit */
+
+.search-bar input[type='text']{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    padding: 9px 12px;
+}
+.search-bar button{
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateX(-54px);
+    cursor: pointer;
+    padding: 15px 20px;
+    text-align: center;
+}
+.search-bar input[type='submit']:hover{
+    background-color: #0066d4;
+    transition: all 0.5s ease;
+}
+
+.content .prix input[type='number']::placeholder {
+    font-size: 13px;
+    padding: 4px;
+}
+.content .prix input[type='submit'] {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.content .wish {
+    display: none;
+}
+
+.content .col-produit .row .col:hover .wish {
+    display: block;
+    transition: all 0.7s ease;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 7px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+.pagination a.active {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+.pagination a:hover:not(.active) {
+    background-color: #0079fb1a;
+}

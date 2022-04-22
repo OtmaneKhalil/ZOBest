@@ -1,0 +1,17 @@
+<section class="login w-full h-full flex " style="height: 100vh;">
+    <div class="login-img w-1/2 h-full hidden lg:block">
+        <img src="../../../assets/images/header2.png" alt="" class="w-full h-full">
+    </div>
+    <div class="login-form lg:w-1/2 mx-auto lg:mx-0 lg:px-32 py-24">
+        <h1 class="text-3xl font-bold text-center">Se connecter</h1>
+        <form action="" class="my-10 flex flex-col">
+            <label for="email" class="font-semibold">Email :</label>
+            <input type="email" name="email" class="p-2 my-2 mb-4 border rounded-md"> 
+            <label for="password" class="font-semibold">Mot de passe :</label>
+            <input type="password" name="password" class="p-2 my-2 border rounded-md">
+            <a routerLink="/forgot" class="float-right text-sm">Mot de passe oublier !</a>
+            <input type="submit" name="signin" value="Se connecter" class="p-2 my-8 font-bold border rounded-md">
+            <p class="text-center">Vous n'avez pas un compte ? <a routerLink="/signup" style="color: #0064cf; text-decoration: underline;">Créez un compte.</a></p>
+        </form>
+    </div>
+</section>

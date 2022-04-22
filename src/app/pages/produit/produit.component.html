@@ -1,0 +1,74 @@
+<section style="height: 100%; background-color: #EEF9FE;">
+<app-navbar></app-navbar>
+<section class="search-bar text-center justify-center mx-auto pt-28">
+    <form action="" class="mx-auto">
+        <input type="text" name="search" placeholder="Qu'est-ce que vous voulez acheter ?" class="w-4/5 lg:w-1/2 lg:px-3 py-2 outline-none shadow-sm placeholder:text-xs lg:placeholder:text-base text-[#E8F9FF] rounded-full">
+        <button type="submit" class="submit px-8 py-3 text-center rounded-3xl outline-none w-15"><img src="../../../assets/images/search.png" alt="" class="w-4"></button>
+    </form>
+</section>
+
+   <section class="content flex justify-center relative">
+       <div class="col-filter hidden lg:block lg:w-1/5 h-56 m-12 bg-white top-0 left-0">
+           <h1 class="p-2 border-b">Catégories</h1>
+           <h1 class="p-2 border-b">Marque</h1>
+           <h1 class="p-2 border-b">Prix</h1>
+           <div class="prix my-6 mx-4">
+               <form action="">
+                   <input type="number" name="" placeholder="Min" id="" class="border w-14">
+                   <span>-</span>
+                   <input type="number" name="" placeholder="Max" id="" class="border w-14">
+                   <input type="submit" name="" value=">" class="w-8 rounded-md ml-2">
+               </form>
+           </div>
+       </div>
+    <div class="col-produit bg-white lg:w-5/6 lg:mr-6 my-10 pb-10">
+           <div class="top flex justify-between items-center mx-4 lg:mx-10 my-6">
+               <h1 class="font-bold">Iphone 13 Pro Max <span class="text-sm font-normal">(1200 résultats)</span></h1>
+               <form action="" class="ml-5">
+                   <label for="trier" class="font-semibold">Trier par :</label>
+                   <select name="trier" id="" class="border mt-1">
+                       <option value="prix">Prix</option>
+                       <option value="commande">Commande</option>
+                   </select>
+               </form>
+           </div>
+           <div class="row lg:px-20 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-12">
+            <div class="col mx-auto" *ngFor="let p of produitsData">
+                <div class="box w-60 lg:w-56 bg-white rounded-xl border relative hover:shadow-xl transition-shadow">
+                    <div class="wish cursor-pointer">
+                        <img src="../../../assets/images/coeur.png" alt="" class="w-6 absolute top-3 right-3">
+                    </div>
+                    <img src="{{p.imgUrl}}" alt="" class="h-36 rounded-tl-xl rounded-tr-xl">
+                   <a href="" class="box-content">
+                    <p class="px-3 pt-2 text-sm">Chez {{p.ref}}</p>
+                    <h2 class="px-3 py-2 font-semibold max-h-14 overflow-hidden">{{p.name}}</h2>
+                        <div class="stars px-3 flex items-center">
+                            <img src="../../../assets/images/etoile.png" alt="" class="w-4 mr-1">
+                            <img src="../../../assets/images/etoile.png" alt="" class="w-4 mr-1">
+                            <img src="../../../assets/images/etoile.png" alt="" class="w-4 mr-1">
+                            <img src="../../../assets/images/etoile.png" alt="" class="w-4 mr-1">
+                        </div>
+                        <div class="flex justify-between items-center p-3 pb-4">
+                            <p class="font-semibold">{{p.price}} DH</p>
+                            <p>{{p.order}} vendu(s)</p>
+                        </div>
+                   </a>
+                </div>
+            </div>
+        </div>
+        <div class="center text-center mt-6">
+            <div class="pagination inline-block">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </div>
+   </section>
+</section>
+<app-footer></app-footer>

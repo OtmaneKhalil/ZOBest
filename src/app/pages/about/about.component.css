@@ -1,0 +1,11 @@
+.about {
+            color: #333;
+        }
+        .about h2 {
+            font-weight: 600;
+            padding: 10px 0;
+        }
+        .about p {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
